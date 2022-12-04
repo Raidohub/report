@@ -1,0 +1,15 @@
+server:
+  port: ${APP_PORT:8011}
+
+spring:
+  profiles:
+    include: base
+    active: '@env@'
+  application:
+    name: ${APP_NAME:report}
+
+config:
+  event:
+    type: rocketmq
+  report:
+    export-sql-limit: 10000

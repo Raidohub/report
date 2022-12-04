@@ -1,0 +1,4 @@
+rocketmq:
+  name-server: ${ROCKETMQ_SERVE_HOST:10.211.55.14}:${ROCKETMQ_SERVE_PORT:9876}
+  producer:
+    group: ${ROCKETMQ_PRODUCER_GROUP:test-producer-group}
